@@ -920,9 +920,9 @@ body::before {
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    padding: 20px 15px;
+    padding: 15px 10px;
     border-radius: 16px;
-    min-width: 90px;
+    min-width: 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
