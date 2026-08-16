@@ -915,14 +915,22 @@ body::before {
     margin-bottom: 40px;
 }
 
+/* --- Penyesuaian untuk Layar HP (Mobile Responsiveness) --- */
+@media (max-width: 600px) {
+    .countdown-grid {
+        gap: 10px; /* Mengecilkan jarak antar kotak dari 20px menjadi 10px */
+        flex-wrap: wrap; /* Mengizinkan kotak turun ke baris baru jika layar benar-benar sangat sempit */
+        margin-bottom: 25px; 
+    }
+
 .cd-box {
     /* Efek Kaca (Glassmorphism) */
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    padding: 12px 10px;
+    padding: 10px 5px;
     border-radius: 10px;
-    min-width: 70px;
+    min-width: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -933,21 +941,21 @@ body::before {
 }
 
 .cd-box span {
-    font-size: 2.8rem;
+    font-size: 1.8rem;
     font-weight: 400;
     color: #ffffff;
     /* Warna teks putih */
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     /* Agar terbaca di background terang/gelap */
     line-height: 1;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 }
 
 .cd-box p {
-    font-size: 0.75rem;
+    font-size: 0.65rem;
     color: rgba(255, 255, 255, 0.9);
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     margin: 0;
 }
 
